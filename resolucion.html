@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧩 Resolución | Potenciación Divertida</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">⭐</span>
+                <span class="logo-text">Potenciación <span class="logo-highlight">Divertida</span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">🏠 Inicio</a></li>
+                <li><a href="propiedades.html" class="nav-link">📚 Propiedades</a></li>
+                <li><a href="resolucion.html" class="nav-link active">🧩 Resolución</a></li>
+                <li><a href="casosespeciales.html" class="nav-link">🌟 Casos Especiales</a></li>
+                <li><a href="recursos.html" class="nav-link">🎨 Recursos</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO INTERNO -->
+    <section class="page-hero" style="background: linear-gradient(135deg, #fbc2eb, #a6c1ee);">
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="page-hero-badge">
+                    <i class="fas fa-puzzle-piece"></i>
+                    ¡Resuelve con nosotros!
+                </div>
+                <h1 class="page-hero-title">Resolución de <span class="gradient-text">Problemas</span></h1>
+                <p class="page-hero-subtitle">
+                    ¡Aplica lo que aprendiste en situaciones divertidas y cotidianas!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROBLEMAS -->
+    <section id="resolucion" class="section resolucion">
+        <div class="container">
+            <div class="resolucion-grid">
+                <!-- Problema 1 -->
+                <div class="problem-card" style="border-top: 6px solid #43e97b;">
+                    <div class="problem-header">
+                        <span class="problem-level">🍬 ¡Fácil!</span>
+                        <span class="problem-badge beginner">⭐ Nivel 1</span>
+                    </div>
+                    <div class="problem-content">
+                        <h4>🍭 Dulces Mágicos</h4>
+                        <p class="problem-text">
+                            Ana tiene 2³ dulces y su amigo le regala 2² dulces más. 
+                            ¿Cuántos dulces tiene en total?
+                        </p>
+                        <div class="problem-steps">
+                            <div class="step">
+                                <span class="step-num">1</span>
+                                <span>2³ = 2 × 2 × 2 = 8 dulces</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-num">2</span>
+                                <span>2² = 2 × 2 = 4 dulces</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-num">3</span>
+                                <span>8 + 4 = 12 dulces</span>
+                            </div>
+                        </div>
+                        <button class="btn-show-solution" onclick="toggleSolution(this)">
+                            <i class="fas fa-eye"></i> ¡Ver solución!
+                        </button>
+                        <div class="solution-content" style="display: none;">
+                            <p><strong>🎉 ¡Solución!</strong></p>
+                            <p>2³ = 8 y 2² = 4</p>
+                            <p>8 + 4 = <strong>12 dulces</strong></p>
+                            <p>🍬 ¡Ana tiene 12 dulces para compartir!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Problema 2 -->
+                <div class="problem-card" style="border-top: 6px solid #f093fb;">
+                    <div class="problem-header">
+                        <span class="problem-level">🚀 ¡Intermedio!</span>
+                        <span class="problem-badge intermediate">⭐ Nivel 2</span>
+                    </div>
+                    <div class="problem-content">
+                        <h4>🚀 Cohete Espacial</h4>
+                        <p class="problem-text">
+                            Un cohete viaja 3⁴ kilómetros en su primer día y 3² kilómetros en el segundo. 
+                            ¿Cuántos kilómetros viajó en total?
+                        </p>
+                        <div class="problem-steps">
+                            <div class="step">
+                                <span class="step-num">1</span>
+                                <span>3⁴ = 3 × 3 × 3 × 3 = 81 km</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-num">2</span>
+                                <span>3² = 3 × 3 = 9 km</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-num">3</span>
+                                <span>81 + 9 = 90 km</span>
+                            </div>
+                        </div>
+                        <button class="btn-show-solution" onclick="toggleSolution(this)">
+                            <i class="fas fa-eye"></i> ¡Ver solución!
+                        </button>
+                        <div class="solution-content" style="display: none;">
+                            <p><strong>🎉 ¡Solución!</strong></p>
+                            <p>3⁴ = 81 y 3² = 9</p>
+                            <p>81 + 9 = <strong>90 kilómetros</strong></p>
+                            <p>🚀 ¡El cohete viajó 90 km!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Problema 3 -->
+                <div class="problem-card" style="border-top: 6px solid #fa709a;">
+                    <div class="problem-header">
+                        <span class="problem-level">🏆 ¡Avanzado!</span>
+                        <span class="problem-badge advanced">⭐ Nivel 3</span>
+                    </div>
+                    <div class="problem-content">
+                        <h4>🌱 Crecimiento de Plantas</h4>
+                        <p class="problem-text">
+                            Una planta mágica duplica su tamaño cada día. 
+                            Si mide 1 cm, ¿cuánto medirá después de 5 días?
+                        </p>
+                        <div class="problem-steps">
+                            <div class="step">
+                                <span class="step-num">1</span>
+                                <span>Día 1: 1 × 2 = 2 cm</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-num">2</span>
+                                <span>Fórmula: 2⁵ = 32 cm</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-num">3</span>
+                                <span>¡Mide 32 cm!</span>
+                            </div>
+                        </div>
+                        <button class="btn-show-solution" onclick="toggleSolution(this)">
+                            <i class="fas fa-eye"></i> ¡Ver solución!
+                        </button>
+                        <div class="solution-content" style="display: none;">
+                            <p><strong>🎉 ¡Solución!</strong></p>
+                            <p>2⁵ = 32</p>
+                            <p>La planta medirá <strong>32 centímetros</strong></p>
+                            <p>🌱 ¡Creció mucho en solo 5 días!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Problema 4 -->
+                <div class="problem-card" style="border-top: 6px solid #4facfe;">
+                    <div class="problem-header">
+                        <span class="problem-level">🎨 ¡Creativo!</span>
+                        <span class="problem-badge intermediate">⭐ Nivel 2</span>
+                    </div>
+                    <div class="problem-content">
+                        <h4>🎨 Cuadros de Colores</h4>
+                        <p class="problem-text">
+                            Una artista tiene 5² pinceles y 5³ colores. 
+                            ¿Cuántos pinceles y colores tiene en total?
+                        </p>
+                        <div class="problem-steps">
+                            <div class="step">
+                                <span class="step-num">1</span>
+                                <span>5² = 25 pinceles</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-num">2</span>
+                                <span>5³ = 125 colores</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-num">3</span>
+                                <span>25 + 125 = 150</span>
+                            </div>
+                        </div>
+                        <button class="btn-show-solution" onclick="toggleSolution(this)">
+                            <i class="fas fa-eye"></i> ¡Ver solución!
+                        </button>
+                        <div class="solution-content" style="display: none;">
+                            <p><strong>🎉 ¡Solución!</strong></p>
+                            <p>5² = 25 y 5³ = 125</p>
+                            <p>25 + 125 = <strong>150 materiales</strong></p>
+                            <p>🎨 ¡Tiene muchos colores para pintar!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Problema 5 -->
+                <div class="problem-card" style="border-top: 6px solid #a18cd1;">
+                    <div class="problem-header">
+                        <span class="problem-level">🐱 ¡Divertido!</span>
+                        <span class="problem-badge beginner">⭐ Nivel 1</span>
+                    </div>
+                    <div class="problem-content">
+                        <h4>🐱 Gatitos Saltarines</h4>
+                        <p class="problem-text">
+                            Hay 4² gatitos en un jardín y 4³ gatitos en otro. 
+                            ¿Cuántos gatitos hay en total?
+                        </p>
+                        <div class="problem-steps">
+                            <div class="step">
+                                <span class="step-num">1</span>
+                                <span>4² = 16 gatitos</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-num">2</span>
+                                <span>4³ = 64 gatitos</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-num">3</span>
+                                <span>16 + 64 = 80</span>
+                            </div>
+                        </div>
+                        <button class="btn-show-solution" onclick="toggleSolution(this)">
+                            <i class="fas fa-eye"></i> ¡Ver solución!
+                        </button>
+                        <div class="solution-content" style="display: none;">
+                            <p><strong>🎉 ¡Solución!</strong></p>
+                            <p>4² = 16 y 4³ = 64</p>
+                            <p>16 + 64 = <strong>80 gatitos</strong></p>
+                            <p>🐱 ¡Qué lindos son todos los gatitos!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Problema 6 -->
+                <div class="problem-card" style="border-top: 6px solid #43e97b;">
+                    <div class="problem-header">
+                        <span class="problem-level">🚗 ¡Aventura!</span>
+                        <span class="problem-badge advanced">⭐ Nivel 3</span>
+                    </div>
+                    <div class="problem-content">
+                        <h4>🚗 Autos de Carreras</h4>
+                        <p class="problem-text">
+                            Un auto acelera y recorre 2¹⁰ metros en 10 segundos. 
+                            ¿Cuántos metros recorre?
+                        </p>
+                        <div class="problem-steps">
+                            <div class="step">
+                                <span class="step-num">1</span>
+                                <span>2¹⁰ = 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2</span>
+                            </div>
+                            <div class="step">
+                                <span class="step-num">2</span>
+                                <span>2¹⁰ = 1024 metros</span>
+                            </div>
+                        </div>
+                        <button class="btn-show-solution" onclick="toggleSolution(this)">
+                            <i class="fas fa-eye"></i> ¡Ver solución!
+                        </button>
+                        <div class="solution-content" style="display: none;">
+                            <p><strong>🎉 ¡Solución!</strong></p>
+                            <p>2¹⁰ = 1024</p>
+                            <p>El auto recorrió <strong>1024 metros</strong></p>
+                            <p>🚗 ¡Qué rápido va!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo-icon">⭐</span>
+                <span class="logo-text">Potenciación</span>
+            </div>
+            <div class="footer-team">
+                <h4>👨‍👩‍👧‍👦 Nuestro Equipo</h4>
+                <div class="team-grid">
+                        <div class="team-member">
+                            <span class="member-emoji">👩‍🏫</span>
+                            <span class="member-name">María Rene Vaca Huanca</span>
+                        </div>
+                        <div class="team-member">
+                            <span class="member-emoji">👨‍🏫</span>
+                            <span class="member-name">Silvia Estefania Valdez Mendoza</span>
+                        </div>
+                        <div class="team-member">
+                            <span class="member-emoji">👩‍💻</span>
+                            <span class="member-name">Sara Mamani Beltran</span>
+                        </div>
+                        <div class="team-member">
+                            <span class="member-emoji">👨‍💻</span>
+                            <span class="member-name">Sheryl Alison Gonzáles Yurquina</span>
+                        </div>
+                        <div class="team-member">
+                            <span class="member-emoji">👩‍🎨</span>
+                            <span class="member-name">William Lucana Martines</span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
